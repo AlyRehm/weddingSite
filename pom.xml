@@ -13,7 +13,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 	<name>weddingSite</name>
-	<description>It&apos;s about time! Our wedding site</description>
+	<description>It is about time! Our wedding site</description>
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
