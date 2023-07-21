@@ -36,7 +36,7 @@ public class UserService {
 	    	}
 	    	
 	        // Reject if password doesn't match confirmation
-	    	if(!newUser.getPassword().equals(newUser.getConfirm())) {
+	    	if(!newUser.getPassword().equals(newUser.getConfirmPassword())) {
 	    	    result.rejectValue("confirm", "Matches", "Passwords must match!");
 	    	}
 
@@ -56,7 +56,7 @@ public class UserService {
 	        // Reject if NOT present
 	    	Optional<User> potentialUser = userRepo.findByEmail(newLoginUser.getEmail());
 	    	if(!potentialUser.isPresent()) {
-	    		result.rejectValue("email","Mathches", "User is not found");
+	    		result.rejectValue("email","Matches", "User is not found");
 	    		return null;
 	    	}
 	    	User user = potentialUser.get();    
