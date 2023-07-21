@@ -15,19 +15,18 @@ import com.alysonrehm.weddingSite.models.LoginUser;
 import com.alysonrehm.weddingSite.models.User;
 import com.alysonrehm.weddingSite.services.UserService;
 
-
 @Controller
-public class HomeController {
-	
+public class AdminController {
+
 	@Autowired
 	private UserService userService;
 	
 	
-	@GetMapping("/")
+	@GetMapping("/login")
 	public String index(Model model) {
 		model.addAttribute("newUser", new User());
 		model.addAttribute("newLogin", new LoginUser());
-		return "index.jsp";
+		return "loginReg.jsp";
 	}
 	
 	
@@ -47,11 +46,11 @@ public class HomeController {
 	     
 	     if(result.hasErrors()) {
 	         model.addAttribute("newLogin", new LoginUser());
-	         return "index.jsp";
+	         return "loginReg.jsp";
 	     }
 	     	     session.setAttribute("userId", user.getId());
 	 
-	     return "redirect:/classes";
+	     return "adminHome.jsp";
 	 }
 
 	 
@@ -63,11 +62,11 @@ public class HomeController {
 	 
 	     if(result.hasErrors()) {
 	         model.addAttribute("newUser", new User());
-	         return "index.jsp";
+	         return "loginReg.jsp";
 	     }
 	 
 	     session.setAttribute("userId", user.getId());
 	 
-	     return "redirect:/classes";
+	     return "adminHome.jsp";
 	 }
 }
