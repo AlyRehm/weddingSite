@@ -1,0 +1,22 @@
+/* styles.css */
+
+/* Background image for Page 1 */
+body.page1 {
+    background-image: url('src\main\resources\static\Images\SunsetArches.jpeg');
+    /* Set background size and other properties as per your requirement */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  /* Background image for Page 2 */
+  body.page2 {
+    background-image: url('url_to_background_image_page2.jpg');
+    /* Set background size and other properties as per your requirement */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  /* Add more styles here for other pages as needed */
+  
