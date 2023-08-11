@@ -1,0 +1,36 @@
+/* GENERAL STYLE */
+
+* {
+  margin: 0px;
+  padding: 0px
+}
+
+.container {
+  margin: 0px auto;
+  width: 1100px;
+}
+
+
+
+/* INDEX PAGE */
+  /* COUNTER */
+.counter {
+  border-color: blueviolet;
+  width: 200px;
+  height: 200px;
+}
+
+
+
+
+  /* MAIN BODY */
+.details{
+  border-color: blue;
+  width: 200px;
+  height: 200px;
+}
+
+
+
+
+  /* NAV BAR */
